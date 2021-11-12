@@ -11,7 +11,7 @@ Objectives For lab:
 
 Issue:
 
-Main acitvity works with the buttons. However, after clicking on the product list, a few items does not show up.
+Main acitvity works with the buttons. However, after clicking on the product list, a few items does not show up. The item delted, added and found is however still in the record in the main activity.
 
 Group Members:
 
