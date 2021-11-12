@@ -26,9 +26,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            productName = itemView.findViewById(R.id.productName);
-            productPrice = itemView.findViewById(R.id.productPrice);
-            productId = itemView.findViewById(R.id.productID);
+            productName = itemView.findViewById(R.id.productName1);
+            productPrice = itemView.findViewById(R.id.productPrice1);
+            productId = itemView.findViewById(R.id.productID1);
         }
     }
 
