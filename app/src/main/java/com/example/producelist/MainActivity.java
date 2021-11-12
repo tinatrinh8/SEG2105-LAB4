@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         idView.setText("Record Added");
 
 
+
     }
 
     public void lookupProduct (View view) {
