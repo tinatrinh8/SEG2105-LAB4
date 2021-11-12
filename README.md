@@ -11,7 +11,7 @@ Objectives For lab:
 
 Issue:
 
-View all button does not work. When you open the app, all three buttons work fine. However, despite following each slide, there seems to be an error with RecyclerView.
+Main acitvity works with the buttons. However, after clicking on the product list, a few items does not show up.
 
 Group Members:
 
