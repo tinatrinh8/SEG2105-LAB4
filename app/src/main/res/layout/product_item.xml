@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EAEEF3">
+    android:background="#FCFDFD"
+    android:id= "@+id/idProductDisplay"
+    >
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Products Listed Here"
+        android:fontFamily="sans-serif"
+        android:text="Products Are Listed Here"
         android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/title"
         android:columnCount="2"
-        android:rowCount="2">
+        android:rowCount="6">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="166dp"
+            android:layout_height="109dp"
             android:layout_row="0"
-            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:elevation="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -44,15 +42,16 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/idProductId"
+                    android:id="@+id/productID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="3dp"
                     android:text="Product Id"
                     android:textColor="@color/black" />
 
                 <TextView
-                    android:id="@+id/idProductName"
+                    android:id="@+id/productName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -63,7 +62,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/idProductPrice"
+                    android:id="@+id/productPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -77,14 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
-            android:layout_rowWeight="1"
             android:layout_column="1"
-            android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:elevation="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -95,15 +89,16 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/idProductId2"
+                    android:id="@+id/productID2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="3dp"
                     android:text="Product Id"
                     android:textColor="@color/black" />
 
                 <TextView
-                    android:id="@+id/idProductName2"
+                    android:id="@+id/productName2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -114,7 +109,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/idProductPrice2"
+                    android:id="@+id/productPrice2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -125,17 +120,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="187dp"
+            android:layout_height="119dp"
             android:layout_row="1"
-            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:elevation="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -146,15 +136,16 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/idProductId3"
+                    android:id="@+id/productID3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="3dp"
                     android:text="Product Id"
                     android:textColor="@color/black" />
 
                 <TextView
-                    android:id="@+id/idProductName3"
+                    android:id="@+id/productName3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -165,7 +156,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/idProductPrice3"
+                    android:id="@+id/productPrice3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -176,17 +167,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:layout_height="93dp"
             android:layout_row="1"
-            android:layout_rowWeight="1"
             android:layout_column="1"
-            android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="8dp"
-            android:elevation="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -197,15 +183,16 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/idProductId4"
+                    android:id="@+id/productID4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:padding="3dp"
                     android:text="Product Id"
                     android:textColor="@color/black" />
 
                 <TextView
-                    android:id="@+id/idProductName4"
+                    android:id="@+id/productName4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -216,7 +203,107 @@
                     />
 
                 <TextView
-                    android:id="@+id/idProductPrice4"
+                    android:id="@+id/productPrice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Product Price"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="116dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/productID5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Product Id"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/productName5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Product Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/productPrice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Product Price"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="93dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/productID6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Product Id"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/productName6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Product Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/productPrice6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -226,5 +313,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
 
 </RelativeLayout>

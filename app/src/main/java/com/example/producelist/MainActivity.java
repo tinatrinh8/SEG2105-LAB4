@@ -27,10 +27,9 @@ public class MainActivity extends AppCompatActivity {
         idView = (TextView) findViewById(R.id.productID);
         productBox = (EditText) findViewById(R.id.productName);
         priceBox = (EditText) findViewById(R.id.productPrice);
-        viewProductsBtn = (Button) findViewById(R.id.idViewAllbtn);
+        viewProductsBtn = (Button) findViewById(R.id.viewAll);
 
     }
-
     public void newProduct (View view) {
         MyDBHandler dbHandler = new MyDBHandler(this);
 
@@ -39,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Product product = new Product(productBox.getText().toString(), price);
 
         dbHandler.addProduct(product);
+        idView.setText("Record Added");
+
 
     }
 
@@ -79,11 +80,11 @@ public class MainActivity extends AppCompatActivity {
 
         ProductAdapter productAdapter = new ProductAdapter(productArrayList, this);
 
-        RecyclerView.Recycler productsRV = findViewById(R.id.idProductDisplay);
+        RecyclerView productsRV = findViewById(R.id.idProductDisplay);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         productsRV.setLayoutManager(linearLayoutManager);
+
         productsRV.setAdapter(productAdapter);
     }
-
 }

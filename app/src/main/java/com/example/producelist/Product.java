@@ -1,6 +1,7 @@
 package com.example.producelist;
 
 public class Product {
+
     private int _id;
     private String _productname;
     private double _price;
